@@ -32,8 +32,9 @@
 
     <!-- Content -->
     <div class="post-content">
+      {{- partial "post/cover-image.html" . -}}
       {{ .Content }}
-      {{- partial "related.html" . -}}
+      {{- partial "post/related.html" . -}}
     </div>
 
     <!-- Copyright -->

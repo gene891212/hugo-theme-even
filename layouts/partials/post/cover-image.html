@@ -1,0 +1,12 @@
+{{ $caption := "" }}
+
+{{ if isset .Params "caption" }}
+  {{ $caption = .Params.caption }}
+{{ end }}
+
+{{ if isset .Params "images" }}
+  {{ range first 1 .Params.images }}
+    <img src="{{ . }}" alt="cover-image" title="{{ $caption }}">
+  {{ end }}
+  <span class="caption">{{ $caption }}</span>
+{{ end }}
