@@ -15,6 +15,10 @@
       color: $theme-color;
       word-break: break-all;
 
+      &:hover {
+        font-weight: bold;
+      }
+
       &::before {
         content: '#';
       }

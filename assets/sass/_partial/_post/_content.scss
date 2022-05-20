@@ -7,12 +7,12 @@
 
   @for $i from 1 through 6 {
     h#{$i} {
-      font-weight: 400;
+      font-weight: bold;
       font-family: $global-serif-font-family;
 
       .anchor {
         float: left;
-        line-height: 1;
+        line-height: 1.2;
         margin-left: -20px;
         padding-right: 4px;
 
@@ -71,6 +71,17 @@
     max-width: 100%;
   }
 
+  ol, ul {
+    margin: 0;
+    
+    li {
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+  }
+
+
+
   .table-wrapper {
     overflow-x: auto;
 
@@ -105,8 +116,9 @@
   .read-more {
     .read-more-link {
       color: $theme-color;
-      font-size: 1.1em;
+      font-size: 1em;
       font-family: $global-serif-font-family;
+      font-weight: bold;
     
       &:hover {
         border-bottom: $post-readMore-border-bottom;
@@ -194,5 +206,13 @@
     overflow-x: auto;
     overflow-y: hidden;
     padding-right: 1px;
+  }
+
+  .caption {
+    color: #b5b5b5;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    padding-top: 5px;
   }
 }

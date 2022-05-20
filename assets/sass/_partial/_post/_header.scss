@@ -13,26 +13,26 @@
   }
 
   .post-meta {
-    font-size: 14px;
+    font-size: 18px;
     color: $post-meta-font-color;
 
     .post-time {
-      font-size: 15px;
+      font-size: 18px;
     }
 
     .post-category {
       display: inline;
 
       a {
-        color: inherit;
-
-        &::before {
-          content: '·';
-        }
+        color: $theme-color;
 
         &:hover {
-          color: $theme-color;
+          font-weight: bold;
         }
+      }
+      
+      &::before {
+        content: '·';
       }
     }
 

@@ -1,6 +1,6 @@
 # ===== title =====
 archive:
-  other: "歸檔"
+  other: "文章列表"
 
 tags:
   other: "標簽"
@@ -10,10 +10,10 @@ categories:
 
 # ===== footer =====
 powered:
-  other: "由 %s 強力驅動"
+  other: "Powered by %s"
 
 theme:
-  other: "主題"
+  other: "Theme"
 
 siteUV:
   other: "本站總訪客數 %s 人"
