@@ -1,0 +1,11 @@
+{{ if or .Params.relatedPost (and .Site.Params.relatedPost (ne .Params.relatedPost false)) }}
+  {{ $related := site.RegularPages.RelatedIndices . "tags" | first 5 }}
+  {{ with $related }}
+    <b>相關文章</b>
+    <ul>
+      {{ range . }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}
