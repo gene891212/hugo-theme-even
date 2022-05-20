@@ -28,6 +28,11 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   priority = 0.5
   filename = "sitemap.xml"
 
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  archive = "archives"
+
 [[menu.main]]             # config your menu              # 配置目录
   name = "Home"
   weight = 10

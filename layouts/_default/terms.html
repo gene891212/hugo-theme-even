@@ -40,5 +40,7 @@
         {{ end -}}
       </div>
     </div>
+  {{- else if eq $name "archives" -}}
+    {{ partial "archive.html" (where .Site.RegularPages "Type" "in" site.Params.mainSections) }}
   {{- end }}
 {{- end }}
