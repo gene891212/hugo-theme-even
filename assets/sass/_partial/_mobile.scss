@@ -27,6 +27,7 @@
       font-size: 30px;
       line-height: $mobile-navbar-height + 5px;
       font-family: $logo-font-family;
+      -webkit-tap-highlight-color: transparent;
     }
   }
 
