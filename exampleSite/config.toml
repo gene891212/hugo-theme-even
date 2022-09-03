@@ -148,6 +148,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     clientSecret = ""       # Your client secret
 
   [params.utterances]       # https://utteranc.es/
+    enable = false
     owner = ""              # Your GitHub ID
     repo = ""               # The repo to store comments
 

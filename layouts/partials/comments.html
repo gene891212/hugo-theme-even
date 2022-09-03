@@ -124,7 +124,7 @@
   {{- end }}
 
   <!-- utterances -->
-  {{- if .Site.Params.utterances.owner}}
+  {{- if .Site.Params.utterances.enable}}
     <script src="https://utteranc.es/client.js"
             repo="{{ .Site.Params.utterances.owner }}/{{ .Site.Params.utterances.repo }}"
             issue-term="pathname"
