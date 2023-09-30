@@ -359,3 +359,30 @@ $terms-link-margin: 5px 10px !default;
 
 // Font size of the terms count
 $terms-count-font-size: 12px !default;
+
+// ========== Waline ========== //
+$waline-font-size: 18px;
+$waline-white: #fff;
+$waline-light-grey: #999;
+$waline-dark-grey: #666;
+$waline-theme-color: #27ae60;
+$waline-active-color: #2ecc71;
+$waline-color: #444;
+$waline-bgcolor: #fff;
+$waline-bgcolor-light: transparent;
+$waline-bgcolor-hover: #f0f0f0;
+$waline-border-color: #ddd;
+$waline-disable-bgcolor: #f8f8f8;
+$waline-disable-color: #000;
+$waline-code-bgcolor: #282c34;
+$waline-bq-color: #f0f0f0;
+$waline-avatar-size: 3.25em;
+$waline-m-avatar-size: $waline-avatar-size * 9 / 13;
+$waline-badge-color: #3498db;
+$waline-badge-font-size: 0.75em;
+$waline-info-bgcolor: #f8f8f8;
+$waline-info-color: #999;
+$waline-info-font-size: 0.625em;
+$waline-border: 1px solid $waline-border-color;
+$waline-avatar-radius: 50%;
+$waline-box-shadow: none;

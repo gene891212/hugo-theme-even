@@ -112,6 +112,8 @@
   <script type="text/javascript">
     new Valine({
         el: '#vcomments' ,
+        lang:'en',
+        meta: ['nick', 'mail'],
         appId: '{{ .Site.Params.valine.appId }}',
         appKey: '{{ .Site.Params.valine.appKey }}',
         notify: {{ .Site.Params.valine.notify }},
@@ -119,6 +121,21 @@
         avatar:'{{ .Site.Params.valine.avatar }}',
         placeholder: '{{ .Site.Params.valine.placeholder }}',
         visitor: {{ .Site.Params.valine.visitor }}
+    });
+  </script>
+  {{- end }}
+
+  <!-- waline -->
+  {{- if .Site.Params.waline.enable -}}
+  <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
+  <!-- <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css"/> -->
+  <div id="waline"></div>
+  <script>
+    Waline.init({
+      el: '#waline',
+      meta: ['nick', 'mail'],
+      serverURL: {{ .Site.Params.waline.serverURL }},
+      lang: {{ .Site.Params.waline.lang }},
     });
   </script>
   {{- end }}
